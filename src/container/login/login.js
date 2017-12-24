@@ -12,12 +12,12 @@ import {login} from '../../redux/user.redux'
 )
 class Login extends React.Component{
 	constructor(props) {
-		super(props)
+		super(props);
 		this.state = {
 			user:'',
 			pwd:''
-		}
-		this.register = this.register.bind(this)
+		};
+		this.register = this.register.bind(this);
 		this.handleLogin = this.handleLogin.bind(this)
 	}
 	register(){
@@ -35,7 +35,7 @@ class Login extends React.Component{
 		return (
 			<div>
 				{this.props.redirectTo? <Redirect to={this.props.redirectTo} />:null}
-				<Logo></Logo>
+				<Logo/>
 				<WingBlank>
 					<List>
 						{this.props.msg?<p className='error-msg'>{this.props.msg}</p>:null}
