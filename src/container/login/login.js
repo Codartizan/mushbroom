@@ -43,7 +43,7 @@ class Login extends React.Component{
 							onChange={v=>this.handleChange('user',v)}
 
 						>用户</InputItem>
-						<WhiteSpace />
+						<WhiteSpace/>
 						<InputItem
 							onChange={v=>this.handleChange('pwd',v)}
 
